@@ -35,7 +35,6 @@ public class SearchStepDefinitions {
 
     @When("^s?He searches for (.*)")
     public void he_search_for(String term){
-        System.out.println(term);
         theActorCalled(actor).attemptsTo(
                SearchFor.searchFor(term)
         );
