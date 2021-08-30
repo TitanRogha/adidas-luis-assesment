@@ -1,6 +1,6 @@
-Feature: Purchase one item
+  Feature: Search by keyword
 
-  Scenario: Successful purchase
+  Scenario: Search for an item
     Given Pedro is on the Adidas home page
-    When He search for Tenis Duramo SL
-    Then he should have access to manage his account
+    When He searches for Tenis Duramo SL
+    Then He should see items related to "Tenis Duramo sl"
